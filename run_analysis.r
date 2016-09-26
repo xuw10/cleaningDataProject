@@ -41,5 +41,5 @@ mergeDataSub$Activity <- factor(mergeDataSub$Activity, labels = c("WALKING","WAL
 # calculate mean values per subject per activity
 tidyData<-aggregate( .~SubjectId+Activity,data=mergeDataSub, FUN = "mean")
 # Write dataset as .txt
-write.table(tidyData, "tidyData.txt", row.name=FALSE, quote=FALSE)
-write.table(colnames(tidyData), "tidyDataCol.txt", row.name=FALSE, quote=FALSE)
+write.table(tidyData, "tidy_Data.txt", row.name=FALSE, quote=FALSE)
+
